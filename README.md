@@ -27,11 +27,9 @@ McpDeepResearch is a lightweight but powerful [MCP](https://modelcontextprotocol
   ```
 
 ### ⚙️ Quick Start
-1. **Clone & install**
+1. **Install via pip**
    ```bash
-   git clone https://github.com/Pb-207/mcp-deep-research.git
-   cd mcp-deep-research
-   pip install -r requirements.txt
+   pip install 
    ```
 
 2. **(Optional) Manually launch Chrome if it isn’t already running**  
@@ -42,8 +40,7 @@ McpDeepResearch is a lightweight but powerful [MCP](https://modelcontextprotocol
 
 3. **Run the MCP server**
    ```bash
-   python mcp-server.py
-   # (or) `mcp run` if you installed as a package
+   mcp-deep-research
    ```
 
    The server exposes 3 read-only tools to any MCP-capable client.
@@ -89,11 +86,9 @@ McpDeepResearch 是一个轻量级、但功能完备的 [MCP](https://modelconte
   ```
 
 ### ⚙️ 快速开始
-1. **克隆并安装**
+1. **通过 pip 安装**
    ```bash
-   git clone https://github.com/Pb-207/mcp-deep-research.git
-   cd mcp-deep-research
-   pip install -r requirements.txt
+   pip install 
    ```
 
 2. **（可选）如果 Chrome 尚未启动可手动启动**  
@@ -104,8 +99,7 @@ McpDeepResearch 是一个轻量级、但功能完备的 [MCP](https://modelconte
 
 3. **启动 MCP 服务器**
    ```bash
-   python mcp-server.py
-   # （或）安装包后直接使用 mcp run
+   mcp-deep-research
    ```
 
    服务器会对外暴露 3 个只读工具。
