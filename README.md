@@ -29,8 +29,8 @@ McpDeepResearch is a lightweight but powerful [MCP](https://modelcontextprotocol
 ### ⚙️ Quick Start
 1. **Clone & install**
    ```bash
-   git clone https://github.com/your-username/McpDeepResearch.git
-   cd McpDeepResearch
+   git clone https://github.com/Pb-207/mcp-deep-research.git
+   cd mcp-deep-research
    pip install -r requirements.txt
    ```
 
@@ -91,8 +91,8 @@ McpDeepResearch 是一个轻量级、但功能完备的 [MCP](https://modelconte
 ### ⚙️ 快速开始
 1. **克隆并安装**
    ```bash
-   git clone https://github.com/your-username/McpDeepResearch.git
-   cd McpDeepResearch
+   git clone https://github.com/Pb-207/mcp-deep-research.git
+   cd mcp-deep-research
    pip install -r requirements.txt
    ```
 
