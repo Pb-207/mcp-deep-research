@@ -34,23 +34,19 @@ McpDeepResearch is a lightweight but powerful [MCP](https://modelcontextprotocol
    pip install -r requirements.txt
    ```
 
-2. **Launch Chrome for CDP**
+2. **(Optional) Manually launch Chrome if it isn’t already running**  
+   The server will automatically connect to a Chrome instance; if nothing is listening on `9222` you can launch it manually with:  
    ```bash
    google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-profile &
    ```
 
 3. **Run the MCP server**
    ```bash
-   python server.py
+   python mcp-server.py
    # (or) `mcp run` if you installed as a package
    ```
 
    The server exposes 3 read-only tools to any MCP-capable client.
-
-4. **Test from CLI (optional)**
-   ```bash
-   mcp-cli search_scholar_papers --keywords="graph neural networks" --page=1
-   ```
 
 ### 🧑‍🎓 Example Workflow in a Chat-UI
 1. **Search**  
@@ -71,7 +67,6 @@ McpDeepResearch is a lightweight but powerful [MCP](https://modelcontextprotocol
 
 ### 🤝 Contributing
 PRs are welcome!  
-Please run `ruff check .` and `pytest tests/` before opening a pull request.
 
 ---
 
@@ -101,23 +96,19 @@ McpDeepResearch 是一个轻量级、但功能完备的 [MCP](https://modelconte
    pip install -r requirements.txt
    ```
 
-2. **启动 Chrome 以供 CDP 连接**
+2. **（可选）如果 Chrome 尚未启动可手动启动**  
+   服务器启动时会自动连接已运行的 Chrome 实例。若 9222 端口未被监听，可手动启动：  
    ```bash
    google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-profile &
    ```
 
 3. **启动 MCP 服务器**
    ```bash
-   python server.py
+   python mcp-server.py
    # （或）安装包后直接使用 mcp run
    ```
 
    服务器会对外暴露 3 个只读工具。
-
-4. **（可选）命令行测试**
-   ```bash
-   mcp-cli search_scholar_papers --keywords="graph neural networks" --page=1
-   ```
 
 ### 🧑‍🎓 对话界面中的典型工作流
 1. **搜索**  
@@ -138,10 +129,5 @@ McpDeepResearch 是一个轻量级、但功能完备的 [MCP](https://modelconte
 
 ### 🤝 如何贡献
 欢迎提 PR！  
-提 PR 前请运行 `ruff check .` 和 `pytest tests/` 通过测试。
 
 ---
-
-<div align="center">
-  <sub>Made with ❤️ for the research community</sub>
-</div>
