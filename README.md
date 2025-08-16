@@ -33,10 +33,10 @@ McpDeepResearch is a lightweight but powerful [MCP](https://modelcontextprotocol
    ```
 
 2. **(Optional) Manually launch Chrome if it isn’t already running**  
-   The server will automatically connect to a Chrome instance; if nothing is listening on `9222` you can launch it manually with:  
+   The server will automatically launch a Chrome instance; if not successfully launched, you can launch it manually with:  
    ```bash
    google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-profile &
-   ```
+   ``
 
 3. **Run the MCP server**
    ```bash
@@ -95,7 +95,7 @@ McpDeepResearch 是一个轻量级、但功能完备的 [MCP](https://modelconte
    ```
 
 2. **（可选）如果 Chrome 尚未启动可手动启动**  
-   服务器启动时会自动连接已运行的 Chrome 实例。若 9222 端口未被监听，可手动启动：  
+   服务器启动时会自动运行 Chrome 实例。若未成功启动，可手动启动：  
    ```bash
    google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-profile &
    ```
