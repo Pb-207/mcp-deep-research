@@ -2,13 +2,19 @@ from mcp.server.fastmcp import FastMCP
 from tools.search_tools import search_google_paper
 from tools.fetcher import url2md
 from tools.read_tools import read_paper
-from typing import Annotated, Literal
+from typing import Annotated
 from pydantic import Field
 from os import getenv, system
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--transport", default='stdio', help="传输协议")
+parser.add_argument("--port", type=str, default=8000, help="服务器端口")
+args = parser.parse_args()
 
 
 # 创建 MCP 实例
-mcp = FastMCP(name="McpDeepResearch")
+mcp = FastMCP(name="McpDeepResearch", port=args.port)
 
 
 @mcp.tool(
@@ -111,4 +117,4 @@ async def fetch_paper(
 
 if __name__ == "__main__":
     system('google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-profile &')
-    mcp.run(transport='stdio')
+    mcp.run(transport=args.transport)
