@@ -40,7 +40,10 @@ McpDeepResearch is a lightweight but powerful [MCP](https://modelcontextprotocol
 
 3. **Run the MCP server**
    ```bash
-   mcp-deep-research
+   # Launch with SSE
+   mcp-deep-research --transport sse --port 8000
+   # Launch with STDIO
+   mcp-deep-research --transport stdio
    ```
 
    The server exposes 3 read-only tools to any MCP-capable client.
@@ -99,7 +102,10 @@ McpDeepResearch 是一个轻量级、但功能完备的 [MCP](https://modelconte
 
 3. **启动 MCP 服务器**
    ```bash
-   mcp-deep-research
+   # 以 SSE 启动
+   mcp-deep-research --transport sse --port 8000
+   # 以 STDIO 启动
+   mcp-deep-research --transport stdio
    ```
 
    服务器会对外暴露 3 个只读工具。
